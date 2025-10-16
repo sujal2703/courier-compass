@@ -1,0 +1,473 @@
+/* 🎓 Modern Student-Friendly AI Career Advisor Styling */
+
+/* Root styles with vibrant gradient background */
+.root {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    -fx-font-family: "Inter", "Segoe UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+    -fx-font-smoothing-type: gray;
+}
+
+/* 🎨 Login container with glassmorphism effect */
+.login-container {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 25;
+    -fx-padding: 60;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 40, 0, 0, 15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1;
+    -fx-border-radius: 25;
+}
+
+/* 🎯 App title with modern typography */
+.app-title {
+    -fx-font-size: 48px;
+    -fx-font-weight: 900;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0, 0, 5);
+    -fx-letter-spacing: -1px;
+}
+
+.app-subtitle {
+    -fx-font-size: 20px;
+    -fx-text-fill: rgba(255,255,255,0.95);
+    -fx-font-weight: 500;
+    -fx-letter-spacing: 0.5px;
+}
+
+/* 📝 Login form with modern card design */
+.login-form {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-padding: 50;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 25, 0, 0, 10);
+    -fx-border-color: rgba(255, 255, 255, 0.4);
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+}
+
+/* 🚀 Modern button styles with animations */
+.primary-button {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-size: 18px;
+    -fx-padding: 18 36;
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.4), 12, 0, 0, 6);
+    -fx-transition: all 0.3s ease;
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.6), 16, 0, 0, 8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.primary-button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #667eea;
+    -fx-font-weight: 700;
+    -fx-font-size: 18px;
+    -fx-padding: 18 36;
+    -fx-background-radius: 15;
+    -fx-border-color: #667eea;
+    -fx-border-width: 3;
+    -fx-border-radius: 15;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #667eea;
+    -fx-text-fill: white;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.4), 12, 0, 0, 6);
+}
+
+/* 💫 Modern input fields with focus effects */
+.text-field, .password-field {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 3;
+    -fx-border-radius: 15;
+    -fx-padding: 18 24;
+    -fx-font-size: 18px;
+    -fx-background-radius: 15;
+    -fx-transition: all 0.3s ease;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #667eea;
+    -fx-border-width: 3;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.3), 12, 0, 0, 6);
+}
+
+/* 🏷️ Modern labels */
+.label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #374151;
+    -fx-font-weight: 600;
+    -fx-letter-spacing: 0.2px;
+}
+
+/* 🎛️ Dashboard specific styles */
+.header {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-background-radius: 0 0 25 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 15, 0, 0, 8);
+    -fx-border-color: rgba(255, 255, 255, 0.4);
+    -fx-border-width: 0 0 1 0;
+}
+
+.welcome-text {
+    -fx-font-size: 28px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1f2937;
+    -fx-letter-spacing: -0.5px;
+}
+
+.section-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #374151;
+    -fx-letter-spacing: 0.3px;
+}
+
+.sidebar {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 0 25 25 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 5);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 0 1 0 0;
+}
+
+.details-panel {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 25 0 0 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 5);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 0 0 0 1;
+}
+
+.results-count {
+    -fx-font-size: 16px;
+    -fx-text-fill: #6b7280;
+    -fx-font-weight: 600;
+}
+
+.footer-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #9ca3af;
+    -fx-font-weight: 500;
+}
+
+/* 📋 List view styling with modern cards */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 20;
+    -fx-margin: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 4);
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-transition: all 0.3s ease;
+}
+
+.list-cell:hover {
+    -fx-background-color: #f8fafc;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.15), 12, 0, 0, 6);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.list-cell:selected {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.4), 12, 0, 0, 6);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* 🎚️ Combo box styling */
+.combo-box {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 3;
+    -fx-border-radius: 12;
+    -fx-padding: 12 16;
+    -fx-background-radius: 12;
+    -fx-transition: all 0.3s ease;
+}
+
+.combo-box:focused {
+    -fx-border-color: #667eea;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.2), 8, 0, 0, 4);
+}
+
+/* 📜 Scroll pane styling */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-background-radius: 8;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #667eea;
+    -fx-background-radius: 8;
+}
+
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: #5a6fd8;
+}
+
+/* 🎯 Career path details styling */
+.career-detail-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #374151;
+    -fx-font-weight: 600;
+    -fx-padding: 12 0;
+}
+
+.career-detail-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1f2937;
+    -fx-padding: 0 0 16 0;
+}
+
+/* 🎨 Quiz specific styles */
+.quiz-container {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 25;
+    -fx-padding: 50;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 40, 0, 0, 15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1;
+    -fx-border-radius: 25;
+}
+
+.quiz-content {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-padding: 40;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 25, 0, 0, 10);
+}
+
+.question-number {
+    -fx-font-size: 16px;
+    -fx-text-fill: #667eea;
+    -fx-font-weight: 700;
+    -fx-padding: 8 16;
+    -fx-background-color: rgba(102, 126, 234, 0.1);
+    -fx-background-radius: 20;
+}
+
+.question-text {
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1f2937;
+    -fx-wrap-text: true;
+    -fx-letter-spacing: -0.3px;
+}
+
+.answer-options {
+    -fx-spacing: 20;
+}
+
+.answer-options .radio-button {
+    -fx-font-size: 18px;
+    -fx-text-fill: #374151;
+    -fx-padding: 20;
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 15;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.answer-options .radio-button:hover {
+    -fx-background-color: #e2e8f0;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.answer-options .radio-button:selected {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -fx-text-fill: white;
+    -fx-border-color: #5a6fd8;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.3), 8, 0, 0, 4);
+}
+
+/* 📊 Progress bar */
+.progress-bar {
+    -fx-accent: #667eea;
+    -fx-background-radius: 10;
+}
+
+.progress-bar .track {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 10;
+}
+
+.progress-bar .bar {
+    -fx-background-radius: 10;
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 🎭 Alert dialog styles */
+.dialog-pane {
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0, 0, 10);
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -fx-background-radius: 15 15 0 0;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-size: 18px;
+}
+
+.dialog-pane .content {
+    -fx-padding: 30;
+}
+
+.dialog-pane .button {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-background-radius: 10;
+    -fx-padding: 12 24;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* 🎨 Register form styles */
+.register-container {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 25;
+    -fx-padding: 60;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 40, 0, 0, 15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1;
+    -fx-border-radius: 25;
+}
+
+.register-form {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-padding: 50;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 25, 0, 0, 10);
+    -fx-border-color: rgba(255, 255, 255, 0.4);
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+}
+
+/* 🌟 Special effects and animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { translate-x: -30; opacity: 0; }
+    to { translate-x: 0; opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* 🎨 Modern color palette */
+:root {
+    --primary: #667eea;
+    --primary-dark: #5a6fd8;
+    --secondary: #764ba2;
+    --accent: #f093fb;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --background: #f8fafc;
+    --surface: #ffffff;
+    --border: #e5e7eb;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Responsive design elements */
+@media (max-width: 768px) {
+    .app-title {
+        -fx-font-size: 36px;
+    }
+    
+    .app-subtitle {
+        -fx-font-size: 16px;
+    }
+    
+    .login-form, .register-form, .quiz-content {
+        -fx-padding: 30;
+    }
+}
+
+/* 🎯 Focus and accessibility improvements */
+.primary-button:focused, .secondary-button:focused {
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.5), 15, 0, 0, 8);
+}
+
+.text-field:focused, .password-field:focused, .combo-box:focused {
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.3), 12, 0, 0, 6);
+}
+
+/* 🎨 Loading and transition effects */
+.loading {
+    -fx-background-color: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #667eea);
+    -fx-background-size: 400% 400%;
+    -fx-animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

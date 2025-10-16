@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aicareeradvisor.ui.controller.DashboardController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="25" styleClass="header">
+         <children>
+            <VBox alignment="CENTER_LEFT" spacing="8">
+               <children>
+                  <Label fx:id="welcomeLabel" styleClass="welcome-text" text="👋 Welcome, User!" />
+                  <Label styleClass="app-subtitle" text="🎯 Your Career Journey Starts Here" />
+               </children>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="takeQuizButton" onAction="#handleTakeQuiz" styleClass="primary-button" text="🧠 Take Career Quiz" />
+            <Button fx:id="profileButton" onAction="#handleProfile" styleClass="secondary-button" text="👤 Profile" />
+            <Button fx:id="logoutButton" onAction="#handleLogout" styleClass="secondary-button" text="🚪 Logout" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+         </padding>
+      </HBox>
+   </top>
+   
+   <left>
+      <VBox alignment="TOP_CENTER" spacing="20" styleClass="sidebar">
+         <children>
+            <Label styleClass="section-title" text="🔍 Search &amp; Filter" />
+            
+            <VBox alignment="CENTER_LEFT" spacing="8">
+               <children>
+                  <Label text="🔎 Search:" style="-fx-font-weight: 600; -fx-font-size: 16px;" />
+                  <TextField fx:id="searchField" promptText="Search career paths..." style="-fx-font-size: 16px;" />
+               </children>
+            </VBox>
+            
+            <VBox alignment="CENTER_LEFT" spacing="8">
+               <children>
+                  <Label text="📂 Category:" style="-fx-font-weight: 600; -fx-font-size: 16px;" />
+                  <ComboBox fx:id="categoryComboBox" promptText="All Categories" style="-fx-font-size: 16px;" />
+               </children>
+            </VBox>
+            
+            <VBox alignment="CENTER_LEFT" spacing="8">
+               <children>
+                  <Label text="🎓 Education Level:" style="-fx-font-weight: 600; -fx-font-size: 16px;" />
+                  <ComboBox fx:id="educationComboBox" promptText="All Education Levels" style="-fx-font-size: 16px;" />
+               </children>
+            </VBox>
+            
+            <Region VBox.vgrow="ALWAYS" />
+            
+            <VBox alignment="CENTER" spacing="8" style="-fx-background-color: rgba(102, 126, 234, 0.1); -fx-background-radius: 15; -fx-padding: 15;">
+               <children>
+                  <Label styleClass="footer-text" text="🎓 AI Career Advisor" />
+                  <Label styleClass="footer-text" text="✨ v1.0 ✨" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </VBox>
+   </left>
+   
+   <center>
+      <VBox alignment="TOP_CENTER" spacing="15" style="-fx-background-color: rgba(255, 255, 255, 0.8); -fx-background-radius: 20; -fx-padding: 25;">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="15">
+               <children>
+                  <Label styleClass="section-title" text="💼 Career Paths" />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="resultsCountLabel" styleClass="results-count" text="📊 Showing all career paths" />
+               </children>
+            </HBox>
+            
+            <ListView fx:id="careerPathsListView" VBox.vgrow="ALWAYS" style="-fx-background-color: transparent;" />
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </VBox>
+   </center>
+   
+   <right>
+      <VBox alignment="TOP_CENTER" spacing="20" styleClass="details-panel">
+         <children>
+            <Label styleClass="section-title" text="📋 Career Details" />
+            
+            <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS" style="-fx-background-color: rgba(248, 250, 252, 0.8); -fx-background-radius: 15;">
+               <content>
+                  <VBox fx:id="careerDetailsVBox" alignment="TOP_LEFT" spacing="15" style="-fx-padding: 20;" />
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<VBox alignment="CENTER" spacing="30" styleClass="login-container" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aicareeradvisor.ui.controller.LoginController">
+   <children>
+      <!-- Header Section with Icon and Title -->
+      <VBox alignment="CENTER" spacing="15">
+         <children>
+            <!-- App Icon/Logo Placeholder -->
+            <Region prefWidth="80" prefHeight="80" style="-fx-background-color: white; -fx-background-radius: 40; -fx-opacity: 0.9; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 5);" />
+            <Label styleClass="app-title" text="🎓 AI Career Advisor" />
+            <Label styleClass="app-subtitle" text="✨ Discover Your Perfect Career Path ✨" />
+         </children>
+      </VBox>
+      
+      <!-- Login Form -->
+      <VBox alignment="CENTER" spacing="25" styleClass="login-form">
+         <children>
+            <!-- Username Field -->
+            <VBox alignment="CENTER_LEFT" spacing="8">
+               <children>
+                  <Label text="👤 Username" style="-fx-font-weight: 600; -fx-font-size: 16px;" />
+                  <TextField fx:id="usernameField" promptText="Enter your username" style="-fx-font-size: 16px;" />
+               </children>
+            </VBox>
+            
+            <!-- Password Field -->
+            <VBox alignment="CENTER_LEFT" spacing="8">
+               <children>
+                  <Label text="🔒 Password" style="-fx-font-weight: 600; -fx-font-size: 16px;" />
+                  <PasswordField fx:id="passwordField" promptText="Enter your password" style="-fx-font-size: 16px;" />
+               </children>
+            </VBox>
+            
+            <!-- Action Buttons -->
+            <VBox alignment="CENTER" spacing="15">
+               <children>
+                  <Button fx:id="loginButton" onAction="#handleLogin" styleClass="primary-button" text="🚀 Login" />
+                  <Button fx:id="registerButton" onAction="#handleRegister" styleClass="secondary-button" text="📝 Create New Account" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      
+      <!-- Footer with Test Credentials -->
+      <VBox alignment="CENTER" spacing="8" style="-fx-background-color: rgba(255,255,255,0.1); -fx-background-radius: 15; -fx-padding: 20;">
+         <children>
+            <Label text="🧪 Test Credentials" style="-fx-font-weight: 600; -fx-text-fill: white; -fx-font-size: 16px;" />
+            <Label text="Username: admin | Password: password123" style="-fx-text-fill: rgba(255,255,255,0.9); -fx-font-size: 14px;" />
+            <Label text="Username: testuser | Password: test123" style="-fx-text-fill: rgba(255,255,255,0.9); -fx-font-size: 14px;" />
+         </children>
+      </VBox>
+      
+      <!-- Footer -->
+      <VBox alignment="CENTER" spacing="5">
+         <children>
+            <Label styleClass="footer-text" text="© 2024 AI Career Advisor" />
+            <Label styleClass="footer-text" text="Empowering career decisions with AI" />
+         </children>
+      </VBox>
+   </children>
+</VBox>
